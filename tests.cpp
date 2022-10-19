@@ -12,6 +12,7 @@ TEST(wrapAddFunctionTest, WrappingNums) {
     ASSERT_EQ(0, wrapFunctionAdd(UINT_MAX,1));
 }
 
+
 TEST(wrapMulFunctionTest, NonWrappingMulNums) { 
     ASSERT_EQ(18, wrapFunctionMul(3,6));
 }
@@ -27,7 +28,6 @@ TEST(wrapShiftFunctionTest, NonWrappingMulBNums) {
 TEST(wrapShiftFunctionTest, WrappingMulBNums) {
     ASSERT_EQ(4294967295, wrapFunctionShift(UINT_MAX, 12));
 }
-
 
 int main(int argc, char **argv) {
     testing::InitGoogleTest(&argc, argv);

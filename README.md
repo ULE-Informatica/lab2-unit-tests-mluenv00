@@ -77,9 +77,30 @@
 		[  PASSED  ] 6 tests.
 
 
+--------------------------------------------------------------------------------------------------
+---------------------------- MODIFICATION OF THE FUNCTIONS TO NOT ALLOW RAPPING -----------------------
+--------------------------------------------------------------------------------------------------
 
+1. For the Add operation, it's neccesary to verify the rule INT30-C. Not ensure that unsigned integer operations do not wrap.
+This are because the resulting value may be used to allocate insufficient memory for a subsequent operation or in some other manner that can lead 
+to an exploitable vulnerability.
 
+		if (UINT_MAX - ui_a < ui_b) //delete the possibility of unsigned wrap
 
+2. With this comprobation, now the wrapping test fails when the + operation wraps the result numer:
+
+		[----------] 2 tests from wrapAddFunctionTest
+		[ RUN      ] wrapAddFunctionTest.NonWrappingNums
+		[       OK ] wrapAddFunctionTest.NonWrappingNums (0 ms)
+		[ RUN      ] wrapAddFunctionTest.WrappingNums
+		Error, unsigned wrap
+		/home/lab/Escritorio/DPS/lab2-unit-tests-mluenv00/tests.cpp:12: Failure
+		Expected equality of these values:
+		0
+		wrapFunctionAdd((0x7fffffff * 2U + 1U),1)
+    	Which is: 4294967295
+		[  FAILED  ] wrapAddFunctionTest.WrappingNums (0 ms)
+		[----------] 2 tests from wrapAddFunctionTest (0 ms total)
 
 
 

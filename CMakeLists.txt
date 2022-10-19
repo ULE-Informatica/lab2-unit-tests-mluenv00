@@ -8,6 +8,10 @@ project(Laboratory2)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+IF(POLICY CMP0012)
+    CMAKE_POLICY(SET CMP0012 NEW)
+ENDIF()
+
 # Locate GTest
 find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
