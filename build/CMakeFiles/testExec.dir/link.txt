@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/testExec.dir/tests.cpp.o -o testExec  /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 

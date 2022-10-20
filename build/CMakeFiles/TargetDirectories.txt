@@ -1,0 +1,3 @@
+/home/lab/Escritorio/DPS/lab2-unit-tests-mluenv00/build/CMakeFiles/testExec.dir
+/home/lab/Escritorio/DPS/lab2-unit-tests-mluenv00/build/CMakeFiles/edit_cache.dir
+/home/lab/Escritorio/DPS/lab2-unit-tests-mluenv00/build/CMakeFiles/rebuild_cache.dir
