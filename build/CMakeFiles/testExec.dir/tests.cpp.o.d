@@ -1,4 +1,4 @@
-CMakeFiles/runTests.dir/tests.cpp.o: \
+CMakeFiles/testExec.dir/tests.cpp.o: \
  /home/lab/Escritorio/DPS/lab2-unit-tests-mluenv00/tests.cpp \
  /usr/include/stdc-predef.h \
  /home/lab/Escritorio/DPS/lab2-unit-tests-mluenv00/exampleFunction.cpp \

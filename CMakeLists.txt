@@ -18,5 +18,5 @@ include_directories(${GTEST_INCLUDE_DIRS})
  
 # Link runTests with what we want to test and the GTest and pthread library
 find_package (Threads) #To solve library threads problem
-add_executable(runTests tests.cpp)
-target_link_libraries(runTests ${GTEST_LIBRARIES} pthread)
+add_executable(testExec tests.cpp)
+target_link_libraries(testExec ${GTEST_LIBRARIES} pthread)
