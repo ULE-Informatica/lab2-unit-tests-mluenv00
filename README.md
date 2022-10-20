@@ -152,9 +152,3 @@ to an exploitable vulnerability.
     			ASSERT_EQ(-1, wrapFunctionShift(UINT_MAX, 32));
 		} //same a uint max
 		
-		or
-		
-		TEST(wrapShiftFunctionTest, WrappingMulBNums) {
-    			ASSERT_EQ(4294967295, wrapFunctionShift(UINT_MAX, 12)); //same a uint max		
-		}	
-	
