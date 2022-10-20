@@ -1,0 +1,42 @@
+Directory "build" found
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+testExec
+[==========] Running 11 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from wrapAddFunctionTest
+[ RUN      ] wrapAddFunctionTest.NonWrappingNums
+[       OK ] wrapAddFunctionTest.NonWrappingNums (0 ms)
+[ RUN      ] wrapAddFunctionTest.WrappingNums
+[       OK ] wrapAddFunctionTest.WrappingNums (0 ms)
+[ RUN      ] wrapAddFunctionTest.NonWrappingNumsGT
+[       OK ] wrapAddFunctionTest.NonWrappingNumsGT (0 ms)
+[ RUN      ] wrapAddFunctionTest.WrappingNumsGT
+[       OK ] wrapAddFunctionTest.WrappingNumsGT (0 ms)
+[----------] 4 tests from wrapAddFunctionTest (2 ms total)
+
+[----------] 4 tests from wrapMulFunctionTest
+[ RUN      ] wrapMulFunctionTest.NonWrappingMulNums
+[       OK ] wrapMulFunctionTest.NonWrappingMulNums (0 ms)
+[ RUN      ] wrapMulFunctionTest.WrappingMulNums
+[       OK ] wrapMulFunctionTest.WrappingMulNums (0 ms)
+[ RUN      ] wrapMulFunctionTest.NonWrappingNumsGT
+[       OK ] wrapMulFunctionTest.NonWrappingNumsGT (0 ms)
+[ RUN      ] wrapMulFunctionTest.WrappingNumsLT
+[       OK ] wrapMulFunctionTest.WrappingNumsLT (0 ms)
+[----------] 4 tests from wrapMulFunctionTest (0 ms total)
+
+[----------] 3 tests from wrapShiftFunctionTest
+[ RUN      ] wrapShiftFunctionTest.NonWrappingMulBNums
+[       OK ] wrapShiftFunctionTest.NonWrappingMulBNums (0 ms)
+[ RUN      ] wrapShiftFunctionTest.WrappingMulBNums
+[       OK ] wrapShiftFunctionTest.WrappingMulBNums (0 ms)
+[ RUN      ] wrapShiftFunctionTest.WrappingMulBNumsMax
+[       OK ] wrapShiftFunctionTest.WrappingMulBNumsMax (0 ms)
+[----------] 3 tests from wrapShiftFunctionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 3 test suites ran. (4 ms total)
+[  PASSED  ] 11 tests.

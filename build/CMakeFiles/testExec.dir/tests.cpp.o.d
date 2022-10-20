@@ -80,9 +80,9 @@ CMakeFiles/testExec.dir/tests.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/gtest/gtest.h /usr/include/c++/11/cstddef \
- /usr/include/c++/11/limits /usr/include/c++/11/memory \
- /usr/include/c++/11/bits/stl_algobase.h \
+ /usr/include/inttypes.h /usr/include/gtest/gtest.h \
+ /usr/include/c++/11/cstddef /usr/include/c++/11/limits \
+ /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/ext/numeric_traits.h \

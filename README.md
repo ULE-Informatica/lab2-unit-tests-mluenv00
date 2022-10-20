@@ -110,7 +110,7 @@ to an exploitable vulnerability.
 
 		if (UINT_MAX / ui_b < ui_a) //delete the possibility of unsigned wrap
 
-// INT33-C. Ensure that division and remainder operations do not result in divide-by-zero errors
+INT33-C. Ensure that division and remainder operations do not result in divide-by-zero errors
 
 Because the division operation, it's neccesary to verify that ui_b != 0 to avoid non valid zero divisions.
 
@@ -118,3 +118,9 @@ Because the division operation, it's neccesary to verify that ui_b != 0 to avoid
 
 3. For the Shift operation, it's neccesary to verify the following rule:
 
+INT34-C. Do not shift an expression by a negative number of bits or by greater than or equal to the number of bits that exist in the operand 
+
+
+It's neccesary to ensure that both the left and right operands have nonnegative values and that the right operand has less number of ones in the binary representation than the integer left operand:
+
+		if (ui_a < 0 || ui_b < 0 || ui_b >= __builtin_popcount(UINT_MAX) || ui_a > (UINT_MAX >> ui_b)) 

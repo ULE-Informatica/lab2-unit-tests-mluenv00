@@ -1,0 +1,6 @@
+ERROR, unsigned in wrapping in wrapFunctionAdd
+ERROR, unsigned in wrapping in wrapFunctionAdd
+ERROR, unsigned int wrapping in wrapFunctionMul
+ERROR, unsigned int wrapping in wrapFunctionMul
+ERROR, unsigned int wrapping in wrapFunctionShift
+ERROR, unsigned int wrapping in wrapFunctionShift
