@@ -1,6 +1,10 @@
 # dps-laboratory2
 
------------------------------------------------------------CMAKE & GTEST ENVIRONMENT AND TESTS EXECUTION 
+-----------------------------------------------------------
+-----------------------------------------------------------
+CMAKE & GTEST ENVIRONMENT AND TESTS EXECUTION 
+-----------------------------------------------------------
+-----------------------------------------------------------
 -----------------------------------------------------------
 
 1. First, we need to install cmake using the following command:
@@ -75,8 +79,11 @@
 		[==========] 6 tests from 3 test suites ran. (0 ms total)
 		[  PASSED  ] 6 tests.
 
-
------------------------------------------------------------ MODIFICATION OF THE FUNCTIONS TO NOT ALLOW WRAPPING 
+-----------------------------------------------------------
+-----------------------------------------------------------
+MODIFICATION OF THE FUNCTIONS TO NOT ALLOW WRAPPING 
+-----------------------------------------------------------
+-----------------------------------------------------------
 -----------------------------------------------------------
 
 1. For the Add operation, it's neccesary to verify the rule INT30-C. Not ensure that unsigned integer operations do not wrap.
@@ -101,7 +108,7 @@ to an exploitable vulnerability.
 		[----------] 2 tests from wrapAddFunctionTest (0 ms total)
 
 
-2. For the Mul operation, it's neccesary to verify the rule:
+2. For the Mul operation, it's neccesary to verify the following rules:
 
 INT30-C. Not ensure that unsigned integer operations do not wrap.
 
@@ -119,7 +126,6 @@ Because the division operation, it's neccesary to verify that ui_b != 0 to avoid
 3. For the Shift operation, it's neccesary to verify the following rule:
 
 INT34-C. Do not shift an expression by a negative number of bits or by greater than or equal to the number of bits that exist in the operand 
-
 
 It's neccesary to ensure that both the left and right operands have nonnegative values and that the right operand has less number of ones in the binary representation than the integer left operand:
 
