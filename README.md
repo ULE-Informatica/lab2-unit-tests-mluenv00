@@ -1,8 +1,7 @@
 # dps-laboratory2
 
---------------------------------------------------------------------------------------------------
----------------------------- CMAKE & GTEST ENVIRONMENT AND TESTS EXECUTION -----------------------
---------------------------------------------------------------------------------------------------
+-----------------------------------------------------------CMAKE & GTEST ENVIRONMENT AND TESTS EXECUTION 
+-----------------------------------------------------------
 
 1. First, we need to install cmake using the following command:
  
@@ -77,9 +76,8 @@
 		[  PASSED  ] 6 tests.
 
 
---------------------------------------------------------------------------------------------------
----------------------------- MODIFICATION OF THE FUNCTIONS TO NOT ALLOW RAPPING -----------------------
---------------------------------------------------------------------------------------------------
+----------------------------------------------------------- MODIFICATION OF THE FUNCTIONS TO NOT ALLOW WRAPPING 
+-----------------------------------------------------------
 
 1. For the Add operation, it's neccesary to verify the rule INT30-C. Not ensure that unsigned integer operations do not wrap.
 This are because the resulting value may be used to allocate insufficient memory for a subsequent operation or in some other manner that can lead 
@@ -103,4 +101,20 @@ to an exploitable vulnerability.
 		[----------] 2 tests from wrapAddFunctionTest (0 ms total)
 
 
+2. For the Mul operation, it's neccesary to verify the rule:
+
+INT30-C. Not ensure that unsigned integer operations do not wrap.
+
+This are because the resulting value may be used to allocate insufficient memory for a subsequent operation or in some other manner that can lead 
+to an exploitable vulnerability.
+
+		if (UINT_MAX / ui_b < ui_a) //delete the possibility of unsigned wrap
+
+// INT33-C. Ensure that division and remainder operations do not result in divide-by-zero errors
+
+Because the division operation, it's neccesary to verify that ui_b != 0 to avoid non valid zero divisions.
+
+		if (ui_b != 0)
+
+3. For the Shift operation, it's neccesary to verify the following rule:
 
